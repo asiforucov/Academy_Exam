@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Team>
+@{
+    ViewData["Title"] = "Index";
+    int count = 1;
+}
+
+<div class="container-fluid py-4" style="margin-top:100px">
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-4">
+                <div class="card-header pb-0">
+                    <a asp-controller="Team" asp-action="Create" class="btn btn-success">Create</a>
+                </div>
+                <div class="card-body px-0 pt-0 pb-2">
+                    <div class="table-responsive p-0">
+                        <table class="table align-items-center mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Profession</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Title</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Twitter</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Facebook</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Instagram</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Linkedin</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Image</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Setting</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var team in Model)
+                                {
+                                <tr>
+                                    <td>
+                                        @count;
+                                    </td>
+                                    <td>
+                                        @team.Name
+                                    </td>
+                                    <td>
+                                        @team.Profession
+                                    </td>
+                                    <td>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">@team.Title
+                                            </textarea>
+                                    </td>
+                                    <td>
+                                        @team.Twitter
+                                    </td>
+                                    <td>
+                                        @team.Facebook
+                                    </td>
+                                    <td>
+                                        @team.Instagram
+                                    </td>
+                                    <td>
+                                        @team.Linkedin
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img style="width:100px" src="~/assets/image/team/@team.Image" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a asp-controller="Team"  asp-action="Update" asp-route-id="@team.Id" class="btn btn-primary">Update</a>
+                                        <a asp-controller="Team" asp-action="Delete" asp-route-id="@team.Id" class="btn btn-danger">Delete</a>
+                                    </td>
+
+                                </tr>
+                                    count++;
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,112 @@
+#navbar .collapse{
+    justify-content: end;
+}
+#navbar .navbar{
+    width: 85%;
+}
+
+
+#slider img{
+    height: 600px;
+}
+
+#services .header{
+    padding-bottom: 5%;
+}
+#services .header h5,#services .header h2{
+    text-align: center;
+}
+#services .header h2{
+    padding-top: 7%;
+}
+#services .icon{
+    font-size: 50px;
+    padding: 2%;
+    color: #01b1d7;
+}
+#services .card {
+    flex-direction: row;
+    display: flex;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+#services{
+    background: #f2fdff;
+}
+
+
+
+
+#team img{
+    width: 200px;
+    border: 1px;
+    border-radius: 50%;
+}
+#team .img{
+   padding:3%;
+}
+#team .icon i{
+    padding-left:3%;
+ }
+ #team .icon i{
+    padding-left:3%;
+ }
+#team .card{
+    flex-direction: row;
+    display: flex;
+}
+#team .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+#team .about{
+    padding: 5%;
+}
+#team .header{
+    padding-top: 9%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+#team .card{
+    border: 0px;
+    border-radius: 5%;
+    margin-top: 5%;
+}
+
+#team{
+    background: #e9ecef;
+}
+#team .line{
+    width: 60px;
+    height: 2px;
+    background:chocolate;
+}
+
+
+
+
+
+
+#contact{
+    background: white;
+}
+#contact .header{
+    padding-bottom: 5%;
+    justify-content: center;
+}
+#contact .header h5,#contact .header h2{
+    text-align: center;
+}
+#contact .header h2{
+    padding-top: 7%;
+}
+#contact button{
+    margin-bottom: 8%;
+}
+#contact .button{
+    justify-content: center;
+}
+#contact .location{
+    display: flex;
+}

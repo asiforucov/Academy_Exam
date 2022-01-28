@@ -1,0 +1,50 @@
+﻿@model Team
+@{
+    ViewData["Title"] = "Update";
+}
+<div class="container">
+    <form method="post" enctype="multipart/form-data" style="margin-top:100px">
+        <div class="form-group">
+            <label>Name</label>
+            <input asp-for="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Name" style="color:red"></span>
+        </div>
+        <div class="form-group">
+            <label>Profession</label>
+            <input asp-for="Profession" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Profession" style="color:red"></span>
+        </div>
+        <div class="form-group">
+            <label>Title</label>
+            <input asp-for="Title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Title" style="color:red"></span>
+        </div>
+        <div class="form-group">
+            <label>Twitter</label>
+            <input asp-for="Twitter" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Twitter" style="color:red"></span>
+        </div>
+        <div class="form-group">
+            <label>Facebook</label>
+            <input asp-for="Facebook" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Facebook" style="color:red"></span>
+        </div>
+        <div class="form-group">
+            <label>Instagram</label>
+            <input asp-for="Instagram" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Instagram" style="color:red"></span>
+        </div>
+        <div class="form-group">
+            <label>Linkedin</label>
+            <input asp-for="Linkedin" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <span asp-validation-for="Linkedin" style="color:red"></span>
+        </div>
+        <div class="form-group">
+            <label>Example file input</label>
+            <input asp-for="Photo" type="file" class="form-control-file" id="exampleFormControlFile1">
+            <span asp-validation-for="Photo" style="color:red"></span>
+        </div>
+        <button type="submit" class="btn btn-success">Update</button>
+    </form>
+</div>
+
